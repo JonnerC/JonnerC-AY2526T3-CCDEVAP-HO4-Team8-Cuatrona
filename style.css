@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    padding-top: 50px;
+}
+
+h1{
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: #686868b1;
+}
+.card {
+    box-shadow: 5px 10px #88888834;
+    height: 100%;
+    width: 100%;
+}
+
+.card-body-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chart-container{
+    width: 100%;
+    width: 320px;
+}

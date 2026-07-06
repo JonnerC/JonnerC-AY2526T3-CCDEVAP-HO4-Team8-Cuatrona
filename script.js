@@ -1,14 +1,20 @@
-const ctx = document.getElementById('myChart');
+const ctx = document.getElementById('monthlyReports');
 
   new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        label: 'Active Listings',
+        data: [4000, 5000, 1400, 2500, 1000, 7000],
         borderWidth: 1
-      }]
+      },
+      {
+        label: 'Active Groups',
+        data: [1400, 1300, 1200, 3200, 4000, 3500],
+        borderWidth: 1
+      }
+    ]
     },
     options: {
       scales: {
@@ -19,15 +25,20 @@ const ctx = document.getElementById('myChart');
     }
   });
 
-  const ctx1 = document.getElementById('myChart1');
+  const ctx1 = document.getElementById('genderPref');
 
   new Chart(ctx1, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['All Girls', 'All Boys', 'Co-ed'],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        label: 'Shared Spaces Gender Preference',
+        data: [460, 520, 250],
+        backgroundColor: [
+            'rgba(255, 87, 140, 0.7)',
+            'rgba(66, 244, 244, 0.7)',
+            'rgba(255, 196, 45, 0.7)'
+        ],
         borderWidth: 1
       }]
     },
@@ -41,15 +52,14 @@ const ctx = document.getElementById('myChart');
   });
 
 
-  const ctx2 = document.getElementById('myChart2');
+  const ctx2 = document.getElementById('userDistribution');
 
   new Chart(ctx2, {
-    type: 'bar',
+    type: 'doughnut',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Roomies', 'Spaces Manager'],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        data: [6000, 500],
         borderWidth: 1
       }]
     },
