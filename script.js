@@ -17,6 +17,12 @@ const ctx = document.getElementById('monthlyReports');
     ]
     },
     options: {
+      plugins:{
+        title: {
+            display:true,
+            text: 'Monthly Reports'
+        }
+      },
       scales: {
         y: {
           beginAtZero: true
@@ -32,7 +38,7 @@ const ctx = document.getElementById('monthlyReports');
     data: {
       labels: ['All Girls', 'All Boys', 'Co-ed'],
       datasets: [{
-        label: 'Shared Spaces Gender Preference',
+        label: 'Gender Preference',
         data: [460, 520, 250],
         backgroundColor: [
             'rgba(255, 87, 140, 0.7)',
@@ -43,6 +49,12 @@ const ctx = document.getElementById('monthlyReports');
       }]
     },
     options: {
+      plugins:{
+        title: {
+            display:true,
+            text: 'Shared Spaces Gender'
+        }
+      },
       scales: {
         y: {
           beginAtZero: true
@@ -64,6 +76,12 @@ const ctx = document.getElementById('monthlyReports');
       }]
     },
     options: {
+      plugins:{
+        title: {
+            display:true,
+            text: 'Roomies & Spaces Managers User Distribution'
+        }
+      },
       scales: {
         y: {
           beginAtZero: true
